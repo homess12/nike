@@ -1,12 +1,804 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>nike 사이트 모작</title>
+    <title>nike 모작</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <!-- owl 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./index.css">
+    
 </head>
+
 <body>
-    <div class="top-bar">
-        <h1>홈</h1>
+    <div class="header">
+        <div class="top-bar top-bar-1 row">
+            <ul class="menu-box-1 row cell">
+                <li class="cell">
+                    <div><a href="">Nike</a></div>
+                </li>
+                <li class="cell">
+                    <div><a href="">Nike Membership</a></div>
+                </li>
+                <li class="cell cell-jordan">
+                    <div><a href=""><span class="ns-jordan"></span></a></div>
+                </li>
+                <li class="cell cell-converse">
+                    <div><a href=""><span class="ns-logo-converse"></span></a></div>
+                </li>
+            </ul>
+            <ul class="menu-box-2 row cell-right">
+                <li class="cell">
+                    <div>
+                        <a href="">회원가입</a>
+                        <span>/</span>
+                        <a href="">로그인</a>
+                    </div>
+                </li>
+                <li class="cell">
+                    <div><a href="">고객센터</a></div>
+                </li>
+                <li class="cell cell-cart">
+                    <div><a href=""><i class="ns-cart"></i></a></div>
+                </li>
+                <li class="cell cell-pin">
+                    <div><a href=""><i class="ns-pin"></i>대한민국</a></div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-bar-2 text-align-center line-height-0-ch-only">
+            <div class="logo-box"><span class="ns-swoosh"></span></div>
+            <nav class="menu-box-1 inline-block">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-releases">NEW RELEASES</a>
+                        <div class="sub-menu-wrap">
+                            <div class="sub-menu-box con table">
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-releases">신상품 전체보기</a></li>
+                                        <li><a href="https://www.nike.com/kr/launch/?type=feed">SNKRS</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-all">스프링 에센셜</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/airmax-bubble-pack">에어맥스 버블팩</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/women/xc/xb/air-max-verona-collection">베로나 컬렉션</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/acg">ACG</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/nikelab">NikeLab</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-to-sale">NEW TO SALE</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-mens">NEW FOR MEN</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/fw/xc/new-mens-shoes">신발</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/ap/xc/new-mens-clothing">의류</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/eq/xc/new-mens-accessories-equipment">용품</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-mens">전체보기</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="2">NEW FOR WOMEN</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/fw/xc/new-womens-shoes">신발</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/ap/xc/new-womens-clothing">의류</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/eq/xc/new-womens-accessories-equipment">용품</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-womens">전체보기</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-kids">NEW FOR KIDS</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/fw/xc/new-kids-shoes">신발</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/ap/xc/new-kids-clothing">의류</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/eq/xc/new-kids-accessories-equipment">용품</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-kids">전체보기</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="https://www.nike.com/kr/ko_kr/l/men">MEN</a>
+                        <div class="sub-menu-wrap">
+                            <div class="sub-menu-box con table">
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-releases">신상품 전체보기</a></li>
+                                        <li><a href="https://www.nike.com/kr/launch/?type=feed">SNKRS</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-all">스프링 에센셜</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/airmax-bubble-pack">에어맥스 버블팩</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/women/xc/xb/air-max-verona-collection">베로나 컬렉션</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/acg">ACG</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/nikelab">NikeLab</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-to-sale">NEW TO SALE</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/w/men/fw">신발</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw">신발전체</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/lifestyle">라이프스타일</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/running">러닝</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/gym-training">트레이닝 & 짐</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/basketball">농구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/jordan">조던</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/fb/football-shoes">축구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/skateboarding-shoes">스케이트보딩</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/golf">골프</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/tennis">테니스</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fw/sandal-slipper">샌들 & 슬리퍼</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/w/men/ap">의류</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap">의류 전체</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/jackets-vests">재킷 & 베스트</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/pants-tights">팬츠 & 타이츠</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/hoodies-crews">후디 & 크루</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/tops-tshirts">탑 & 티셔츠</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/shorts">숏 팬츠</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/nike-pro-compression">나이키 프로</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/eq/bags">가방</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/eq/socks">양말</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/eq/accessories-equipment">모자 & 용품</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/l/men">스포츠</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/running">러닝</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/training">트레이닝 & 짐</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/men/basketball">농구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/men/football">축구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/men/skateboarding">스케이트보딩</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/golf">골프</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/tennis">테니스</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/l/men">브랜드</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/sportswear">Nike Sportswear</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/nikelab">NikeLab</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/jordan">Jordan</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/nba">NBA</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/men/fan-gear">FAN GEAR</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/l/acg">ACG</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">WOMEN
+                            <div class="sub-menu-wrap">
+                                <div class="sub-menu-box con table">
+                                    <div class="cell table-cell">
+                                        <ul>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-releases">신상품 전체보기</a></li>
+                                            <li><a href="https://www.nike.com/kr/launch/?type=feed">SNKRS</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-all">스프링 에센셜</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/airmax-bubble-pack">에어맥스 버블팩</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/women/xc/xb/air-max-verona-collection">베로나 컬렉션</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/acg">ACG</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/nikelab">NikeLab</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-to-sale">NEW TO SALE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="cell table-cell">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.nike.com/kr/ko_kr/w/women/fw">신발</a>
+                                                <ul>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw">신발전체</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/lifestyle">라이프스타일</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/running">러닝</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/gym-training">트레이닝 & 짐</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/jordan">조던</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/fb/football-shoes">축구</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/golf">골프</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/tennis">테니스</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/fw/sandal-slipper">샌들 & 슬리퍼</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cell table-cell">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.nike.com/kr/ko_kr/w/women/ap">의류</a>
+                                                <ul>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap">의류 전체</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap/jackets-vests">재킷 & 베스트</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap/pants-tights">팬츠 & 타이츠</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap/xc/sports-bras">스포츠 브라</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap/hoodies-crews">후디 & 크루</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap/tops-tshirts">탑 & 티셔츠</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/men/ap/shorts">숏 팬츠</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/ap/skirts-dresses">스커트 & 드레스</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/eq/bags">가방</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/eq/socks">양말</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/w/women/eq/accessories-equipment">모자 & 용품</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cell table-cell">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.nike.com/kr/ko_kr/l/women">스포츠</a>
+                                                <ul>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/running">러닝</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/training">트레이닝 & 짐</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/women/football">축구</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/golf">골프</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/tennis">테니스</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/women/yoga">요가</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="cell table-cell">
+                                        <ul>
+                                            <li>
+                                                <a href="https://www.nike.com/kr/ko_kr/l/women">브랜드</a>
+                                                <ul>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/sportswear">Nike Sportswear</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/nikelab">NikeLab</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/jordan">Jordan</a></li>
+                                                    <li><a href="https://www.nike.com/kr/ko_kr/l/acg">ACG</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="cell">
+                        <a href="https://www.nike.com/kr/ko_kr/l/kids">KIDS</a>
+                        <div class="sub-menu-wrap">
+                            <div class="sub-menu-box con table">
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-releases">신상품 전체보기</a></li>
+                                        <li><a href="https://www.nike.com/kr/launch/?type=feed">SNKRS</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-all">스프링 에센셜</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/airmax-bubble-pack">에어맥스 버블팩</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/women/xc/xb/air-max-verona-collection">베로나 컬렉션</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/acg">ACG</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/nikelab">NikeLab</a></li>
+                                        <li><a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/new-to-sale">NEW TO SALE</a></li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/w/kids/fw">신발</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/baby">베이비(160mm 이하)</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/little-kids">리틀키즈(165-220mm)</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/junior">주니어(225-250mm)</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/lifestyle">라이프스타일</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/running">러닝</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/football">축구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/fw/basketball">농구</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/w/kids/ap">의류</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/baby">베이비 (0-4세)</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/little-kids">리틀키즈 (4-7세)</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/junior">주니어 (8-13세)</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/jackets-vests">재킷 & 베스트</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/pants-tights">팬츠</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/hoodies-crews">후디 & 크루</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/top-tshirts">탑 & 티셔츠</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/ap/tracktop-set">트랙수트 & 세트</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/aq/xc/dress">스커트 & 드레스</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/eq/accessories-equipment">가방 & 모자 & 용품</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="cell table-cell">
+                                    <ul>
+                                        <li>
+                                            <a href="https://www.nike.com/kr/ko_kr/l/kids">스포츠</a>
+                                            <ul>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/running">러닝</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/football">축구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/basketball">농구</a></li>
+                                                <li><a href="https://www.nike.com/kr/ko_kr/w/kids/tennis">테니스</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <i class="ns-search"></i>
+                <input type="search" placeholder="검색">
+            </div>
+        </div>
     </div>
-</body>
-</html>     
+
+    <!-- 메인 슬라이더 -->
+    <div class="box-1 con-2">
+        <div class="img-box">
+            <img src="./img/bn_1.jpg" alt="">
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content-1">
+            <p class="txt">에어맥스 2090</p>
+            <p class="des"> 미래지향적인 디자인으로 새롭게 출시될 에어맥스 2090
+                <br>3월 26일에 만나보세요.
+            </p>
+            <div class="container">
+                <div class="button">
+                    <a href="https://www.nike.com/kr/ko_kr/w/women/xc/xb/air-max-verona-collection">출시예정</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 스타일에 봄을 더하다 -->
+
+    <div class="box-1 con-2">
+        <div class="img-box">
+            <img src="./img/bn_2.jpg" alt="">
+        </div>
+    </div>
+    <div class="contents">
+        <div class="contents-1">
+            <div class="text-box">
+                <p class="tit">스타일에 봄을 더하다</p>
+                <p class="des">나이키와 함께 새로운 시즌을 준비해 보세요
+                    <div class="btn-wrap btn-drop">
+                        <a href="#" class="btn-text btn-text-2">구매하기<i class="fas fa-angle-right color-white"></i></a>
+                        <div class="btn-menu">
+                            <a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-men" class="btn-text">남성용 구매하기</a>
+                            <a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-wmn" class="btn-text">여성용 구매하기</a>
+                            <a href="https://www.nike.com/kr/ko_kr/w/xg/xb/xc/spring-essential-kids" class="btn-text">키즈용 구매하기</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 나이키 리액트 비전 -->
+    <div class="box-1 con-2">
+        <div class="img-box">
+            <img src="./img/bn_3.jpg" alt="">
+        </div>
+    </div>
+    <div class="contents">
+        <div class="contents-1">
+            <div class="text-box">
+                <p class="tit">나이키 리액트 비전</p>
+                <p class="des">꿈을 꾸는 듯 편안하고 부드러운 나이키 리액트 비전.
+                    <br>
+                    멤버만을 위한 혜택과 함께 리액트 비전을 만나보세요.
+                </p>
+                <div class="btn-wrap btn-drop">
+                    <a href="#" class="btn-text btn-text-2">구매하기<i class="fas fa-angle-right color-white"></i></a>
+                    <div class="btn-menu">
+                        <a href="#" class="btn-text">남성용 구매하기</a>
+                        <a href="#" class="btn-text">여성용 구매하기</a>
+                        <a href="#" class="btn-text">키즈용 구매하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 나이키 에어맥스 버블팩 -->
+
+    <div class="box-1 con-2">
+        <div class="img-box">
+            <img src="./img/bn_4.jpg" alt="">
+        </div>
+    </div>
+    <div class="contents">
+        <div class="contents-1">
+            <div class="text-box">
+                <p class="tit">나이키 에어맥스 버블팩</p>
+                <p class="des">버블 텍스처에 시선을 사로잡는 컬러웨이로 빛나는 스타일을 연출해보세요.</p>
+                <div class="btn-wrap btn-drop">
+                    <a href="#" class="btn-text btn-text-2">구매하기<i class="fas fa-angle-right color-white"></i></a>
+                    <div class="btn-menu">
+                        <a href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/airmax-bubble-pack?productGender=03" class="btn-text">남성용 구매하기</a>
+                        <a href="https://www.nike.com/kr/ko_kr/w/xg/fw/nsw/airmax-bubble-pack?productGender=02" class="btn-text">여성용 구매하기</a>
+                        <a href="https://www.nike.com/kr/ko_kr/w/xg/fw/kids/airmax-bubble-pack" class="btn-text">키즈용 구매하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    Trending Now-->
+    <div class="box-1 con-2 main-bn">
+        <div class="text-box">
+            <h3>Trending Now</h3>
+        </div>
+        <ul class="row">
+            <li class="cell">
+                <div class="img-box">
+                    <img src="./img/bn_5_1.jpg" alt="">
+                    <div class="text-box-1">
+                        <p class="tit">나이키 50 컬렉션</p>
+                        <div class="container">
+                            <div class="button">
+                                <a href="https://www.nike.com/kr/ko_kr/w/xg/ap/xc/tech-pack-all">구매하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="cell">
+                <div class="img-box">
+                    <img src="./img/bn_5_2.jpg" alt="">
+                    <div class="text-box-1">
+                        <p class="tit">나이키 50 컬렉션</p>
+                        <div class="container">
+                            <div class="button">
+                                <a href="https://www.nike.com/kr/ko_kr/w/xg/ap/xc/tech-pack-all">구매하기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--    Featured Shoes-->
+    <div class="box-2 con-2 main-bn">
+        <div class="text-box-2">
+            <h3>Featured Shoes</h3>
+        </div>
+
+        <div class="content">
+            <div class="slider">
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_1.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">나이키 에어맥스 베로나</h4>
+                        <p class="prod-name">여성 신발 라이프스타일</p>
+                        <p class="prod-price">139,000원</p>
+                    </div> <!-- end image -->
+                    <!-- end image -->
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_2.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">나이키 리액트 비전</h4>
+                        <p class="prod-name">남성 신발 라이프스타일</p>
+                        <p class="prod-price">149,000원</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_3.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">나이키 에어맥스 90</h4>
+                        <p class="prod-name">남성 신발 라이프스타일</p>
+                        <p class="prod-price">139,000원</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_4.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">나이키 리액트 인피니티 런 플라이니트</h4>
+                        <p class="prod-name">남성 신발 러닝</p>
+                        <p class="prod-price">179,000원</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_5.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">나이키 SB GTS 리턴 프리미엄</h4>
+                        <p class="prod-name">성인공용 신발 액션스포츠</p>
+                        <p class="prod-price">109,000원</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_6.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">카이리 6 EP</h4>
+                        <p class="prod-name">남성 신발 농구</p>
+                        <p class="prod-price">159,000원</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="image">
+                        <img src="./img/bn_6_7.jpg" alt="">
+                    </div>
+                    <div class="slick-text-box">
+                        <h4 class="tit">나이키 팬텀 비전 2 엘리트 다이나믹 핏 FG</h4>
+                        <p class="prod-name">나이키 팬텀 비전 2 엘리트 다이나믹 핏 FG</p>
+                        <p class="prod-price">329,000원</p>
+                    </div>
+                </div>
+            </div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                <span class="slider__label sr-only"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-2 con-2 main-bn-1">
+        <div class="text-box">
+            <h3>Apparel Essentials</h3>
+        </div>
+        <ul class="row">
+            <li class="cell">
+                <div class="img-box">
+                    <img src="./img/bn_7_1.jpg" alt="">
+                    <div class="text-box-1">
+                        <p class="tit">후디 & 크루</p>
+                    </div>
+                </div>
+            </li>
+            <li class="cell">
+                <div class="img-box">
+                    <img src="./img/bn_7_2.jpg" alt="">
+                    <div class="text-box-1">
+                        <p class="tit">재킷 & 베스트</p>
+                    </div>
+                </div>
+            </li>
+            <li class="cell">
+                <div class="img-box">
+                    <img src="./img/bn_7_3.jpg" alt="">
+                    <div class="text-box-1">
+                        <p class="tit">팬츠 & 타이츠</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer text-align-center line-height-0-ch-only">
+        <nav class="footer-contents inline-block">
+            <!--         ul.row>li.cell*4>a[href="#"]{1차 메뉴 아이템 $}+div.sub-menu-wrap>div.sub-menu-box.con.table>(.cell.table-cell*1>ul>li*5>a[href="#"]{2차 메뉴 아이템 $})+(.cell.table-cell*4>ul>li>a[href="$"]{2차 메뉴 아이템 $}+ul>li*7>a[href="#"]{3차 메뉴 아이템 $} -->
+            <ul class="row">
+                <li class="cell">
+                    <div class="sub-menu-wrap-1">
+                        <div class="sub-menu-box-1 con table">
+                            <div class="cell table-cell">
+                                <ul>
+                                    <li><a href="https://www.nike.com/kr/ko_kr/store?ignoreSharing=true">매장안내</a></li>
+                                    <li><a href="">로그인</a></li>
+                                    <li><a href="https://www.nike.com/kr/ko_kr/register">회원가입</a></li>
+                                </ul>
+                            </div>
+                            <div class="cell table-cell">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-mens">고객센터</a>
+                                        <ul>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/tel:080-022-0182">080-022-0182</a></li>
+                                            <li><a href="https://nike-breeze.zendesk.com/hc/ko/categories/115000391073">주문/결제</a></li>
+                                            <li><a href="https://nike-breeze.zendesk.com/hc/ko/categories/115000391033-%EB%B0%B0%EC%86%A1">배송</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/account/orders">주문배송조회</a></li>
+                                            <li><a href="https://nike-breeze.zendesk.com/hc/ko/categories/115000387934">멤버쉽 혜택/서비스</a></li>
+                                            <li><a href="https://nike-breeze.zendesk.com/hc/ko/categories/115000485933">공지사항</a></li>
+                                            <li><a href="https://lc-api.lunasoft.co.kr/lunachat/api-connect/@나이키닷컴/main/no_gid">1:1 채팅 문의</a></li>
+                                            <li><a href="https://nike-breeze.zendesk.com/hc/ko/requests/new">1:1 이메일문의</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/cscenter/policy">이용약관</a></li>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/cscenter/privacyAndTerms">개인정보처리방침</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cell table-cell">
+                                <ul>
+                                    <li>
+                                        <a href="2">ABOUT NIKE</a>
+                                        <ul>
+                                            <li><a href="https://www.nike.com/kr/ko_kr/w/new/fw/xc/new-womens-shoes">나이키에 대하여</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="cell table-cell">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.nike.com/kr/ko_kr/w/new/xb/xc/new-kids">SOCIAL</a>
+                                        <ul class="footer-social">
+                                            <li class="cell">
+                                                <a href="https://twitter.com/nikecom_kr">
+                                                    <span class="ns-twiier">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="cell">
+                                                <a href="https://www.facebook.com/nike">
+                                                    <span class="ns-facebook">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="cell">
+                                                <a href="https://www.youtube.com/user/nike">
+                                                    <span class="ns-instagram">
+                                                        <i class="fab fa-youtube"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="cell">
+                                                <a href="https://instagram.com/nike">
+                                                    <span class="ns-instagram">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="footer-copy row">
+            <nav class="footer-copy-left cell">
+                <ul class="row">
+                    <li class="cell">
+                        <i class="fas fa-map-marker"></i>
+                        <a class="korea" href="http://www.nike.com/language_tunnel">대한민국</a>
+                    </li>
+                    <li class="cell">
+                        <a href="">ⓒ 2019 Nike, Inc. All Rights Reserved</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footer-copy-right cell-right">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="https://www.nike.com/kr/ko_kr/cscenter/policy">이용약관</a>
+                    </li>
+                    <li class="cell">
+                        <a href="https://www.nike.com/kr/ko_kr/cscenter/privacyAndTerms">개인정보처리방침</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-info">
+            <div class="footer-box">
+                <ul class="row">
+                    <li class="cell relative">
+                        <span>(유)나이키코리아</span>
+                        <span>대표
+                            <i>KIM MYUNG HEE</i>
+                        </span>
+                        <span class="divider">
+                            서울 강남구 테헤란로 152 강남파이낸스센터 31층
+                        </span>
+                        <br>
+                        <span>통신판매업신고번호
+                            <i>2011-서울강남-03461</i>
+                        </span>
+                        <span class="divider">
+                            등록번호
+                            <i>220-88-09068</i>
+                        </span>
+                        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208809068">사업자정보확인</a>
+                        <br>
+                        <span>
+                            개인정보보호책임자
+                            <i>ANDY HOUGHTON</i>
+                        </span>
+                        <span class="divider">
+                            정보보호최고책임자
+                            <i>이희준</i>
+                        </span>
+                        <span class="divider">
+                            고객센터 전화문의
+                            <a href="https://www.nike.com/kr/ko_kr/tel:080-022-0182">080-022-0182</a>
+                        </span>
+                        <br>
+                        <span>
+                            FAX
+                            <i>02-6744-5880</i>
+                        </span>
+                        <span class="divider">
+                            E-mail
+                            <i>service@nike.co.kr</i>
+                        </span>
+                        <span class="divider">
+                            호스팅서비스사업자
+                            <i>브리즈</i>
+                        </span>
+                    </li>
+                    <li class="cell">
+                        <span>
+                            안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한
+                            <br>
+                            KG 이니시스의 구매안전 서비스 (채무지급보증)를 이용하실 수 있습니다.
+                            <br>
+                            <br>
+                            온라인디지털콘텐츠사업발전법에 의한
+                            <a class="underline" href="">콘텐츠보호안내 자세히보기</a>
+
+                        </span>
+                        <span class="escrow-icon-img">
+                            <div class="img-box">
+                                <img src="./img/footer_img.png" alt="">
+                            </div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="index.js"></script>
+
+
+</body></html>
